@@ -13,8 +13,7 @@ function pageload() {
 
 document.getElementById("play").addEventListener("click", playvideo);
 function playvideo() {
-	video.load();
-	video.autoplay = true;
+	video.play();
 	let videovolume = video.volume*100 + "%";
 	document.getElementById("volume").innerHTML = videovolume;
 	console.log("Play video");
